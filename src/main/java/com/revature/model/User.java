@@ -19,4 +19,10 @@ public class User {
 
     @Column(name = "name")
     private String name;
+
+    @Column
+    private String username;
+
+    @Column
+    private String password;
 }
