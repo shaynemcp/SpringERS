@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 @Entity
@@ -24,10 +25,10 @@ public class Reimbursement {
     private  String description;
 
     @Column(name = "submitted")
-    private LocalDateTime submitted;
+    private Timestamp submitted;
 
     @Column(name = "resolved")
-    private  LocalDateTime resolved;
+    private  Timestamp resolved;
 
     @Column(name = "receipt")
     private String receipt;
