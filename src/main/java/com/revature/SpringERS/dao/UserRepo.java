@@ -10,7 +10,7 @@ import java.util.List;
 public interface UserRepo extends JpaRepository<User, Integer> {
     List<User> findAll();
 
-    public abstract User findByUsernameandPassword(String username, String password);
+    public abstract User findUserByUsernameAndPassword(String username, String password);
 
     Iterable<User> findUserById(int id);
 }
